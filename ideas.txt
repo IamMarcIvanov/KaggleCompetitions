@@ -1,0 +1,13 @@
+Classes:
+PassengerId      0
+Survived         0 - this is what we need to predict
+Pclass           0 - this could be important
+Name             0 - this is most likely irrelevant - you can use the mr, mrs, master info
+Sex              0 - this could be important - will have to convert the male female thing into one-hot
+Age            177 - to fill this up, you can assign it them the average of the k nearest neighbours
+SibSp            0 - this is the number of siblings or spouses
+Parch            0 - this is the number of parents or children
+Ticket           0 - this is the ticket number - for now this can be dropped since it uses letters and alphabets - can check the number of unique values
+Fare             0 - this is a decimal number saying how much the passenger paid
+Cabin          687 - this is combo of letters and numbers - too many missing - drop column
+Embarked         2 - you can drop this for now - later use one-hot for it since there are only a few of them
